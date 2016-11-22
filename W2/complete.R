@@ -1,4 +1,8 @@
+## This function returns a dataframe of two columns which contains the id and its non-Na observation's number
 complete <- function(directory, id = 1:332){
+        ## Variable description
+        ## direcotry is a sting whihc is thd directory of the data, usually it's "specdata"
+        ## id is the id of the monitor, and it's also the name of each file in specdata.rar
         nobs <- c()
         for (item in id) {
                 if(item < 10){
